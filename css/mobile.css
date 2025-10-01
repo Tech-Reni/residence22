@@ -1,0 +1,119 @@
+@media (max-width: 800px) {
+    .desktop-navbar {
+        width: 100%;
+    }
+
+    .desktop-navbar .desk-nav-item {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .desktop-navbar .desk-nav-item:nth-child(6) {
+        margin-top: 30px;
+        display: block;
+    }
+
+    .desktop-navbar .desk-nav-item-img {
+        height: 80px;
+        padding: 10px;
+        z-index: 3;
+        overflow: visible;
+    }
+
+    .desktop-navbar .desk-nav-item-img img {
+        width: 90px;
+        height: 80px;
+    }
+
+    .first-sect {
+        background-size: cover;
+        height: 550px;
+        clip-path: ellipse(100% 55% at 48% 44%);
+    }
+
+    .first-sect div {
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .first-sect div:nth-child(1) {
+        padding: 5px;
+        text-align: center;
+        font-size: 30px;
+        height: 350px;
+    }
+
+    .first-sect div:nth-child(1) p {
+        margin-top: 60px;
+        font-weight: 200;
+        font-size: xx-large;
+    }
+
+    .first-sect div:nth-child(2) {
+        height: 250px;
+    }
+
+    .contact-btn {
+        margin-left: calc(50% - 80px);
+    }
+
+    .search-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 12px;
+        margin-left: 5px;
+    }
+
+    .search-card select,
+    .search-card input {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .btn-check {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .modal-content {
+        width: 85%;
+        margin: 10% auto;
+        padding: 15px;
+    }
+
+     .shortlets-section {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .shortlet-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .shortlet-img {
+        height: 160px;
+    }
+
+    /* .shortlet-card {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+    } */
+
+    .see-more {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .shortlets-section h2 {
+        font-size: 22px;
+    }
+
+    .prev,
+    .next {
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Primary Meta Tags -->
+    <title>Residence 22 — Premium Shortlet Apartments in Nigeria</title>
+    <meta name="title" content="Residence 22 — Premium Shortlet Apartments in Nigeria">
+    <meta name="description"
+        content="Book luxury shortlet apartments in Lagos, Abuja, and across Nigeria with Residence 22. Affordable pricing, modern amenities, and seamless booking experience.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.residence-22.com/">
+    <meta property="og:title" content="Residence 22 — Premium Shortlet Apartments in Nigeria">
+    <meta property="og:description"
+        content="Discover modern shortlet apartments with Residence 22. Flexible stays, great locations, and premium amenities tailored for you.">
+    <meta property="og:image" content="https://www.residence-22.com/img/preview.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.residence-22.com/">
+    <meta name="twitter:title" content="Residence 22 — Premium Shortlet Apartments in Nigeria">
+    <meta name="twitter:description"
+        content="Book luxury shortlet apartments in Nigeria with Residence 22. Affordable, flexible, and stylish stays.">
+    <meta name="twitter:image" content="https://www.residence-22.com/img/preview.jpg">
+
+    <!-- Extra SEO -->
+    <meta name="keywords"
+        content="shortlet, apartments, residence 22, short stay, lagos shortlet, abuja apartments, nigeria rentals, serviced apartments">
+    <meta name="author" content="Residence 22">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpg">
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="img/logo.png">
+
+</head>
+
+
+<body>
+
+    <!-- DESKTOP NAVIGATION BAR -->
+    <div class="desktop-navbar">
+        <div class="desk-nav-item">
+            <a href="#">Home</a>
+        </div>
+        <div class="desk-nav-item">
+            <a href="#">About</a>
+        </div>
+        <div class="desk-nav-item-img">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="desk-nav-item">
+            <a href="#">Reviews</a>
+        </div>
+        <div class="desk-nav-item">
+            <a href="#">Pricing</a>
+        </div>
+        <div class="desk-nav-item" id="menu-btn" onclick="showOverlay()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="currentColor">
+                <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>RESIDENCE 22</h2>
+            <button class="close-btn" id="close-btn">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class="ri-home-4-line"></i> Home</a></li>
+            <li><a href="#"><i class="ri-user-star-line"></i> About</a></li>
+            <li><a href="#"><i class="ri-customer-service-2-line"></i> Reviews</a></li>
+            <li><a href="#"><i class="ri-secure-payment-line"></i> Pricing</a></li>
+        </ul>
+    </div>
+
+    <!-- FIRST SECTION -->
+    <section class="first-sect">
+        <div class="article">
+            <p>Where modern living meets comfort — RESIDENCE 22</p>
+            <a href="https://wa.me/+2348145355669">
+                <button class="contact-btn">
+                    <i class="ri-whatsapp-line"></i>
+                    <code>Message</code>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <br><br>
+
+    <form id="search-form" class="search-card" style="width: 90%;" role="search" aria-label="Search shortlets">
+        <div class="form-field">
+            <label for="location">Location </label>
+            <select id="location" name="location">
+                <option value="" disabled selected>Select location</option>
+                <option value="Lekki">Lekki</option>
+                <option value="Victoria">Victoria Island</option>
+                <option value="Ikoyi">Ikoyi</option>
+                <option value="Ikeja">Ikeja</option>
+                <option value="Maitama">Maitama</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="checkin">Check-in date</label>
+            <input type="date" id="checkin" name="checkin" />
+        </div>
+
+        <div class="form-field">
+            <label for="nights">Number of nights</label>
+            <input type="number" id="nights" name="nights" min="1" value="1" />
+        </div>
+
+        <div class="form-field">
+            <label for="rooms">Number of rooms</label>
+            <select id="rooms" name="rooms">
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label>&nbsp;</label>
+            <button type="submit" class="btn-check" aria-label="Check availability">
+                <i class="ri-search-line"></i>
+                <span>Check Availability</span>
+            </button>
+        </div>
+
+    </form>
+
+    <br><br>
+
+    <section class="shortlets-section">
+        <h2>Available Shortlets</h2>
+        <div id="shortlets-container"></div>
+    </section>
+
+    <!-- Modal -->
+    <div id="shortletModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <br>
+            <h2 id="modalTitle">Shortlet Preview</h2>
+            <br>
+            <!-- Image Slider -->
+            <div class="slider">
+                <div class="slides" id="modalSlides"></div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <ul id="modalAmenities"></ul>
+            </div>
+
+            <!-- Rent Now Button -->
+            <div class="rent-now">
+                <a id="rentBtn" target="_blank">Rent Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo & About -->
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="Residence 22 Logo" class="footer-logo">
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="ri-phone-line"></i> Benjamin: <a href="tel:08165618123">0816 561 8123</a></p>
+                <p><i class="ri-phone-line"></i> Danjay: <a href="tel:08173403801">0817 340 3801</a></p>
+                <p><i class="ri-mail-line"></i> <a href="mailto:residence22@gmail.com">residence22@gmail.com</a></p>
+                <p><i class="ri-whatsapp-line"></i> <a href="https://wa.me/2348165618123" target="_blank">Chat on
+                        WhatsApp</a></p>
+            </div>
+
+            <!-- Socials -->
+            <div class="footer-socials">
+                <h4>Follow Us</h4>
+                <p><i class="ri-tiktok-fill"></i> <a href="https://tiktok.com/@residence22"
+                        target="_blank">@residence22</a></p>
+                <p><i class="ri-instagram-line"></i> <a href="https://instagram.com/residence22shortlets"
+                        target="_blank">residence22 Shortlets</a></p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#shortlets"><i class="ri-home-4-line"></i> Shortlets</a></li>
+                    <li><a href="#about"><i class="ri-information-line"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="ri-contacts-book-2-line"></i> Contact</a></li>
+                    <li><a href="#faq"><i class="ri-question-line"></i> FAQs</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p style="justify-content: center;" >© 2025 Residence 22. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/shortlets.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

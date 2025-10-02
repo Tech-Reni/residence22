@@ -136,7 +136,6 @@ body {
 
 .sidebar-menu li {
   padding: 1rem;
-  border-bottom: 1px solid var(--root-clr);
 }
 
 .sidebar-menu li a {

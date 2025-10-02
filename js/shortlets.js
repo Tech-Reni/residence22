@@ -2,36 +2,12 @@ const shortletsData = {
     "listings": [
         {
             "id": "r22-001",
-            "title": "Skyline Studio",
-            "price": "₦12,000 / Night",
-            "rooms": "2 Rooms",
-            "location": "Ikeja",
-            "rating": "⭐ 4.7",
-            "rentMessage": "Hello, I am interested in renting the Skyline Studio shortlet. Can you share more details?",
-            "images": [
-                "img/hero.jpg",
-                "img/hero.jpg",
-                "img/hero.jpg",
-                "img/hero.jpg"
-            ],
-            "amenities": [
-                "Free WiFi",
-                "Swimming Pool",
-                "Air Conditioning",
-                "Smart TV",
-                "Kitchen",
-                "24/7 Power Supply",
-                "Parking Space"
-            ]
-        },
-        {
-            "id": "r22-002",
-            "title": "Palm View Apartment",
+            "title": "FLAT ONE",
             "price": "₦150,000 / Night",
             "rooms": "3 Rooms",
-            "location": "Lekki",
+            "location": "Ikorodu",
             "rating": "⭐ 4.9",
-            "rentMessage": "Hi, I’d like to book the Palm View Apartment shortlet. Can you provide availability details?",
+            "rentMessage": "Hello, I am interested in a shortlet. Can you share more details?",
             "images": [
                 "img/001/sitting_room_1.jpg",
                 "img/001/master-room.jpg",
@@ -41,9 +17,66 @@ const shortletsData = {
                 "img/001/toilet-1.jpg",
             ],
             "amenities": [
-                "Smart Home System",
-                "Fully Equipped Kitchen",
-                "24/7 Security"
+                "Snooker Game",
+                "Free WiFi",
+                "Air Conditioning",
+                "Smart TV",
+                "Kitchen",
+                "24/7 Power Supply",
+                "Parking Space"
+            ]
+        },
+        {
+            "id": "r22-002",
+            "title": "FLAT TWO",
+            "price": "₦100,000 / Night",
+            "rooms": "2 Rooms",
+            "location": "Ikorodu",
+            "rating": "⭐ 4.8",
+            "rentMessage": "Hello, I am interested in a shortlet. Can you share more details?",
+            "images": [
+                "img/002/sitting_room.jpg",
+                "img/002/bed_1.jpg",
+                "img/002/kitchen.jpg",
+                "img/002/bed_2.jpg",
+                "img/002/toilet_1.jpg",
+                "img/002/toilet_2.jpg",
+                "img/002/front_door.jpg"
+            ],
+            "amenities": [
+                "Free WiFi",
+                "Air Conditioning",
+                "Smart TV",
+                "Kitchen",
+                "24/7 Power Supply",
+                "Parking Space"
+            ]
+        },
+        {
+            "id": "r22-003",
+            "title": "FLAT THREE",
+            "price": "₦100,000 / Night",
+            "rooms": "2 Rooms",
+            "location": "Ikorodu",
+            "rating": "⭐ 4.9",
+            "rentMessage": "Hello, I am interested in a shortlet. Can you share more details?",
+            "images": [
+                "img/003/sitting_room.jpg",
+                "img/003/bed_1.jpg",
+                "img/003/kitchen.jpg",
+                "img/003/sitting_room_2.jpg",
+                "img/003/bed_2.jpg",
+                "img/003/toilet_1.jpg",
+                "img/003/toilet_2.jpg",
+                "img/003/front_door.jpg"
+            ],
+            "amenities": [
+                "Free WiFi",
+                "Air Conditioning",
+                "Smart TV",
+                "Kitchen",
+                "24/7 Power Supply",
+                "Parking Space"
             ]
         }
     ]

@@ -4,8 +4,8 @@ const shortletsData = {
             "id": "r22-001",
             "title": "FLAT ONE",
             "price": "₦150,000 / Night",
-            "rooms": "3 Rooms",
-            "location": "Ikorodu",
+            "rooms": "3 Bedroom Duplex",
+            "location": "SHOLEBO ESTATE EBUTE IKORODU",
             "rating": "⭐ 4.9",
             "rentMessage": "Hello, I am interested in a shortlet. Can you share more details?",
             "images": [
@@ -30,8 +30,8 @@ const shortletsData = {
             "id": "r22-002",
             "title": "FLAT TWO",
             "price": "₦100,000 / Night",
-            "rooms": "2 Rooms",
-            "location": "Ikorodu",
+            "rooms": "2 Bedroom Duplex",
+            "location": "SHOLEBO ESTATE EBUTE IKORODU",
             "rating": "⭐ 4.8",
             "rentMessage": "Hello, I am interested in a shortlet. Can you share more details?",
             "images": [
@@ -56,8 +56,8 @@ const shortletsData = {
             "id": "r22-003",
             "title": "FLAT THREE",
             "price": "₦100,000 / Night",
-            "rooms": "2 Rooms",
-            "location": "Ikorodu",
+            "rooms": "2 Bedroom Duplex",
+            "location": "SHOLEBO ESTATE EBUTE IKORODU",
             "rating": "⭐ 4.9",
             "rentMessage": "Hello, I am interested in a shortlet. Can you share more details?",
             "images": [

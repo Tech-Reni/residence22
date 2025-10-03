@@ -82,45 +82,6 @@ function renderShortlets(listings) {
 }
 
 // ----------------------
-// Search Form Handling
-// ----------------------
-const searchForm = document.getElementById('search-form');
-if (searchForm) {
-    searchForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const location = document.getElementById('location').value.trim().toLowerCase();
-        const rooms = document.getElementById('rooms').value.trim().toLowerCase();
-
-        let filtered = [];
-
-        if (location && rooms) {
-            // Both selected -> return listings that match either one OR both
-            filtered = shortletsData.listings.filter(shortlet => {
-                const matchLocation = shortlet.location.toLowerCase().includes(location);
-                const matchRooms = shortlet.rooms.toLowerCase().includes(rooms);
-                return matchLocation || matchRooms;
-            });
-        } else if (location) {
-            // Only location filter
-            filtered = shortletsData.listings.filter(shortlet =>
-                shortlet.location.toLowerCase().includes(location)
-            );
-        } else if (rooms) {
-            // Only rooms filter
-            filtered = shortletsData.listings.filter(shortlet =>
-                shortlet.rooms.toLowerCase().includes(rooms)
-            );
-        } else {
-            // No filters at all -> show all
-            filtered = shortletsData.listings;
-        }
-
-        renderShortlets(filtered);
-    });
-}
-
-// ----------------------
 // Modal Logic
 // ----------------------
 let currentSlide = 0;

@@ -272,12 +272,7 @@
             const rooms = document.getElementById("rooms").value;
 
             // Construct WhatsApp message
-            const message = `Hello, my name is ${name}. 
-                                I would like to book a shortlet. 
-                                📞 Phone: ${phoneNo} 
-                                📅 Check-in: ${checkin || "Not specified"} 
-                                🌙 Nights: ${nights} 
-                                🏠 Rooms: ${rooms}`;
+            const message = `Hello, my name is ${name}. I would like to book a shortlet. 📞 Phone: ${phoneNo} 📅 Check-in: ${checkin || "Not specified"} 🌙 Nights: ${nights}  🏠 Rooms: ${rooms}`;
 
             // Encode message for URL
             const encodedMessage = encodeURIComponent(message);
